@@ -1,7 +1,7 @@
 Spring autowire with qualifiers
 ===============================
 
-This is source code for blog post `TODO`
+This is source code for blog post http://przybyszd.blogspot.com/2015/12/spring-autowire-with-qualifiers.html
 
 Autowire:
 
