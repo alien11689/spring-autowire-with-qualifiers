@@ -12,12 +12,19 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner
 class SpringAutowireWithQualifiersApplicationTests {
 
     @Autowired
-    @Qualifier('htmlHeaderPrinter')
-    IHeaderPrinter headerPrinter
+    IHeaderPrinter htmlHeaderPrinter
+
+    @Autowired
+    IHeaderPrinter markdownHeaderPrinter
 
     @Test
     void shouldPrintHtmlHeader() {
-        assert headerPrinter.printHeader('myTitle') == '<h1>myTitle</h1>'
+        assert htmlHeaderPrinter.printHeader('myTitle') == '<h1>myTitle</h1>'
+    }
+
+    @Test
+    void shouldPrintMarkdownHeader() {
+        assert markdownHeaderPrinter.printHeader('myTitle') == '# myTitle'
     }
 
 }
