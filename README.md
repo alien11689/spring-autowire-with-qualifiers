@@ -8,4 +8,5 @@ Autowire:
 -	one implementation - branch `oneImplementation`
 -	two implementations - branch `twoImplementations` (test of course fails)
 -	two implementation with qualifier - branch `twoImplementationWithQualifier`
+-	two implementation based on field name - branch `twoImplementaitonBasedOnFieldName`
 -	two implementation with primary - branch `twoImplementationWithPrimary`
